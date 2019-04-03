@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registartion form</title>
+</head>
+<body>
+<center>
+	<table border="10">
+		<col width="80">
+  		
+		<form action="reg_update.html" method="GET">
+		<thead> <h3>Fill this Information</h3></thead>
+			
+			<tr><td> Fname</td>
+				<td><input type="text" name="fname" required="" placeholder="first name" title="your name" oninvalid="this.setCustomValidity('Set your First  name!!')"></td>
+			</tr>
+
+			
+			<tr><td> Lname</td>
+				<td><input type="text" name="lname" required="" placeholder="last name" title="your last name" oninvalid="this.setCustomValidity('Set your Last name!!')"></td>
+			</tr>
+
+			<tr><td>Birth Date</td>
+				<td><input type="Date" name="dob" required="" title="Date of Birth"></td>
+			</tr>
+
+			<tr><td>Color</td>
+				<td><input type="color" name="color" title=" select color"></td>
+			</tr>
+
+			<tr><td>Gender</td>
+				<td>
+					male<input type="radio" name="gender" value="male" checked="">
+					female<input type="radio" name="gender" value="female">
+				</td>
+			</tr>
+			<tr><td>Password</td>
+				<td><input type="Password" name="password" placeholder="password 6 to 10 letters" title="password length min 6 and not more then 10 letters" minlength="6" maxlength="10" oninvalid="this.setCustomValidity('password length should be minimum 6 and not more then 10 letters')"></td>
+			</tr>
+			<tr><td>confirm password</td>
+				<td><input type="Password" name="cnf_pass" placeholder="same as above password" oninvalid="this.setCustomValidity('It must be same as above password')"></td>
+			</tr>
+
+			<tr><td>Email</td>
+				<td><input type="Email" name="email" placeholder="example@expl.com" title="valid email id"></td>
+			</tr>
+			<tr><td>Phone no</td>
+				<td><input type="text" name="number" pattern="[0-9]{10}" placeholder="9911223344" oninvalid="this.setCustomValidity('mobile number must be 10 digits ')"></td>
+			</tr>
+			<tr><td><input type="submit" name="submit" style="width: 100px ;color:white;background-color: green"></td>
+				<td><input type="reset" name="reset" style="width: 174px; color: white ;background-color: red" ></td>
+			</tr>
+		
+	</form></table>
+</center>
+</body>
+</html>
